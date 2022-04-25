@@ -10,7 +10,7 @@ import { Logout } from "./components/Logout";
 import { Routes,Route } from "react-router-dom"
 import { useContext } from "react";
 import { AuthContext } from "./components/context/AuthContext";
-
+// app function
  
 function App() {
 
@@ -19,6 +19,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+   
+//    routes
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/employees" element={<ProtectedRoute>
